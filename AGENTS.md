@@ -31,6 +31,7 @@ TTRPG Persona is a standalone C# application for one voice-driven AI player, wit
 
 ## Workspace
 
+- [Project documentation](docs/index.md): tracked technical documentation for AI agents; start with this index.
 - `.agents/`: local Git-ignored plans, research, handoffs, task artifacts, and private runtime data.
 
 ## Git / Commits
