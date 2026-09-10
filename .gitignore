@@ -1,0 +1,77 @@
+# Local agent workspaces and runtime configuration
+/.agents/
+/.codex/
+
+# Secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+*.local
+secrets.json
+appsettings.Local.json
+appsettings.*.local.json
+*.pfx
+*.p12
+*.publishsettings
+
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and per-user IDE state
+.vs/
+.idea/
+.vscode/
+.history/
+*.iml
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.DotSettings.user
+_ReSharper*/
+
+# .NET build and publish output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+publish/
+artifacts/
+.artifacts/
+*.nupkg
+*.snupkg
+/.nuget/packages/
+/packages/
+
+# Tests, coverage and benchmarks
+[Tt]est[Rr]esults/
+BenchmarkDotNet.Artifacts/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+*.coverlet.json
+coverage.cobertura.xml
+coverage.opencover.xml
+
+# Optional frontend tooling
+node_modules/
+dist/
+.vite/
+.parcel-cache/
+
+# Logs, temporary files and local backups
+/Logs/
+/Backups/
+*.log
+*.binlog
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
