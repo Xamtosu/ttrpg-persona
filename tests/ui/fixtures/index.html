@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Persona — fictional UI fixture</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="/css/app.css">
+    <script type="module" src="./main.js"></script>
+</head>
+<body>
+    <aside style="padding: 16px 40px; font-size: 12px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+        <strong>Fictional fixture · вымышленный пример · no APIs, audio or saving</strong>
+        <label>Scenario <select id="scenario">
+            <option value="ready">Filled / ready</option>
+            <option value="participantIds">Independent participant IDs</option>
+            <option value="empty">Empty</option>
+            <option value="finalizing">Finalizing / locked</option>
+            <option value="thinking">Thinking / locked</option>
+            <option value="speaking">Speaking / locked</option>
+            <option value="muted">Microphone muted</option>
+            <option value="disconnected">Microphone disconnected</option>
+            <option value="providerError">Provider error</option>
+            <option value="summaryFailed">Summary failure</option>
+            <option value="budgetExceeded">Summary budget exhausted</option>
+            <option value="saveFailed">Save error / retry</option>
+            <option value="completed">Completed / summary reviewed</option>
+            <option value="unreviewed">Completed / summary not reviewed</option>
+        </select></label>
+        <label>Next command <select id="command-mode">
+            <option value="accept">Accept in memory</option>
+            <option value="reject">Reject</option>
+            <option value="delay">Wait for release</option>
+            <option value="delayReject">Wait, then reject</option>
+            <option value="badOrder">Invalid source ordering</option>
+            <option value="publishWait">Publish, wait before accepting</option>
+        </select></label>
+        <button id="release">Release pending command</button>
+        <button id="append">Append utterance</button>
+        <button id="refresh-source">Publish changed notes</button>
+        <span>Fictional saved reference: <code>fictional-snapshot</code> · old mill session · snapshot unavailable</span>
+        <output id="fixture-status" aria-label="Fixture command status"></output>
+    </aside>
+    <main id="app"></main>
+</body>
+</html>
