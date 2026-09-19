@@ -1,0 +1,13 @@
+{
+  "name": "ttrpg-persona-ui-checks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "preview": "node preview.js",
+    "capture": "node capture.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
