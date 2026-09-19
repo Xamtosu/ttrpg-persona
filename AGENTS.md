@@ -41,4 +41,5 @@ TTRPG Persona is a standalone C# application for one voice-driven AI player, wit
 - Do not push, merge, create a pull/merge request, or fully or partially revert a commit without explicit user authorization.
 - Agent commit identity: name `AI`, email `ai@dev.me`. Apply it to authorized agent commits without changing the user's global Git identity.
 - Write commit messages in English.
+- Do not add attribution or co-authorship trailers. No `Co-Authored-By` line for an agent, and no generated-with or tool-advertising line, in commit messages or in pull/merge request titles and descriptions. The agent commit identity above is the only attribution.
 - Preserve unrelated user changes. Do not stage them incidentally.
